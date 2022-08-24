@@ -1,0 +1,23 @@
+.about-section {
+ // padding: 6rem 4rem; // consider removing this padding bc we already have the base one
+  opacity: 1;
+    .skill-list {
+        margin-bottom: 2.4rem;
+    }
+
+}
+.about-desc {
+  max-width: 65ch;
+  margin-bottom: 1.4rem;
+  font-size: calc(max(1rem, min(1.2vw, 8rem)));
+  @supports (font-size: clamp(1rem, 1.2vw, 8rem)) {
+    font-size: clamp(1rem, 1.2vw, 8rem);
+  }
+}
+.about__title {
+  font-size: calc(max(2rem, min(2vw, 12rem)));
+
+  @supports (font-size: clamp(3rem, 3vw, 12rem)) {
+    font-size: clamp(3rem, 3vw, 12rem);
+  }
+}

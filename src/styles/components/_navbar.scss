@@ -1,0 +1,56 @@
+@use "../abstracts/variables" as variables;
+.navbar {
+  top: 0;
+  background-color: variables.$background-color;
+  height: 3.5rem;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+  z-index: 3;
+  .navbar__logo {
+    display: inline-block;
+    height: 2.25rem;
+    margin: 1rem;
+  }
+
+  .navbar__items {
+    .navbar__items--link {
+      margin: 1.9rem;
+      font-size: 1.2rem;
+      text-decoration: none;
+      position: relative;
+      color: variables.$text-color;
+    }
+  }
+}
+.nav-scrolled {
+  $navbar-color: black;
+  background-color: $navbar-color;
+  box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.16),
+    0 2px 5px 0 rgba(255, 255, 255, 0.12);
+}
+
+.navbar__items--link::after {
+  content: "";
+  width: 0%;
+  height: 0.105rem;
+  background: radial-gradient(
+    circle,
+    rgba(48, 197, 48, 1) 12%,
+    rgba(48, 197, 48, 1) 62%
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: absolute;
+  top: 20px;
+  bottom: 0%;
+  left: 50%;
+  margin-top: 5px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+.navbar__items--link:hover::after {
+  left: 0%;
+  width: 100%;
+}

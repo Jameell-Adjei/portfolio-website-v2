@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as variables;
+
+.contact-section__button {
+    display: block;
+    margin: 2rem auto;
+   // text-align: center;
+    background-color:variables.$background-color;
+    color: white;
+    border: white 2px solid;
+    border-radius: 0.3rem;
+    width: 5rem;
+    height: 2.5rem;
+}
