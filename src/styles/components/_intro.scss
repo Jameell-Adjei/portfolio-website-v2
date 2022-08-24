@@ -1,0 +1,31 @@
+.intro {
+    // padding: 0 4rem;
+    min-height: 100vh;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .intro__main--header {
+      font-size: calc(max(1rem, min(1.5rem, 10rem)));
+  
+      @supports (font-size: clamp(2rem, 4rem, 12rem)) {
+        font-size: clamp(1rem, 1.5rem, 10rem);
+      }
+    }
+    .intro__desc {
+      font-size: calc(max(1rem, min(1.8vw, 10rem)));
+  
+      @supports (font-size: clamp(1rem, 1.8vw, 10rem)) {
+        font-size: clamp(1rem, 1.8vw, 10rem);
+      }
+    }
+  
+    .intro__main--name {
+      font-size: calc(max(3.3rem, min(5vw, 12rem)));
+  
+      @supports (font-size: clamp(3.3rem, 15vw, 12rem)) {
+        font-size: clamp(3.3rem, 5vw, 12rem);
+      }
+    }
+  }
+  

@@ -1,19 +1,20 @@
-import { useState } from 'react'
-
+import Navbar from "./components/Navbar";
+import Intro from "./components/Intro";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import "./styles/app.scss";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      <h1>Vite + React</h1>
-      <div>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      <Navbar />
+      <Intro />
+      <About />
+      <Projects />
+      <Contact />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,58 @@
+@use "../abstracts/variables" as variables;
+.project-container {
+  opacity: 1;
+  min-height: 100vh;
+}
+
+.project-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+}
+
+.project-grid__item {
+  background-color: variables.$background-color;
+  text-decoration: none;
+  color: variables.$text-color;
+  .project-grid-item-desc {
+    padding: 1.7rem;
+    margin-bottom: 2rem;
+    background-color: #3c387d;
+    border: 0.2rem solid white;
+    min-width: 15rem;
+    max-width: 20rem;
+    font-size: calc(max(1.3rem, min(1.1vw, 1.5rem)));
+    @supports (font-size: clamp(1.3rem, 1.1vw, 1.5rem)) {
+      font-size: clamp(1.3rem, 1.2vw, 1.5rem);
+    }
+    .project-item-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 0.9rem;
+      padding-top: 0.9rem;
+      .project-item-tag {
+        font-weight: bold;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: variables.$text-color;
+  }
+}
+
+.project__main-header {
+  padding-bottom: 3rem;
+  text-align: center;
+  font-size: calc(max(2rem, min(2vw, 12rem)));
+
+  @supports (font-size: clamp(2rem, 2vw, 12rem)) {
+    font-size: clamp(2rem, 2vw, 12rem);
+  }
+}

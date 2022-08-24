@@ -3,7 +3,7 @@ import ProjectItem from "./ProjectItem";
 import { useOnViewport } from "../helperFuncs";
 import { colorVertTags, movieTrackerTags } from "../data";
 
-const Project: React.FC = () => {
+const Projects: React.FC = () => {
   useOnViewport(
     { rootMargin: "0px 0px -250px 0px", threshold: 0 },
     ".project-container",
@@ -36,4 +36,4 @@ const Project: React.FC = () => {
   );
 };
 
-export default Project;
+export default Projects;
