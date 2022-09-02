@@ -1,32 +1,31 @@
 import React from "react";
 import PropTypes from "prop-types";
+import ProjectDesc from "./ProjectDesc";
+import ProjectImage from "./ProjectImage";
 
 interface PIProps {
   title: string;
   desc: string;
-  tags?: string[]; // remove the optional ? later
+  tags: string[];
+  src?: string;
   link?: string;
 }
 
-const ProjectItem: React.FC<PIProps> = ({ title, desc, link, tags }) => {
+const ProjectItem: React.FC<PIProps> = ({ title, desc, link, tags, src }) => {
   return (
     <>
       <h1 className="project-grid__item--title">{title}</h1>
-      <a
-        className="project-grid__item"
-        href={link}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div className="project-grid-item-desc">
-          <p>{desc}</p>
-          <div className="project-item-tags">
-            {tags?.map((tag) => (
-              <p className="project-item-tag">{tag}</p>
-            ))}
-          </div>
-        </div>
-      </a>
+      <div className="project-item-wrapper">
+        <ProjectImage src={src} />
+        <a
+          className="project-grid__item"
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ProjectDesc tags={tags} desc={desc} />
+        </a>
+      </div>
     </>
   );
 };
