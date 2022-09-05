@@ -1,31 +1,56 @@
+@use "../abstracts/variables";
+
 .intro {
-    // padding: 0 4rem;
-    min-height: 100vh;
-    opacity: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    .intro__main--header {
-      font-size: calc(max(1rem, min(1.5rem, 10rem)));
-  
-      @supports (font-size: clamp(2rem, 4rem, 12rem)) {
-        font-size: clamp(1rem, 1.5rem, 10rem);
-      }
-    }
-    .intro__desc {
-      font-size: calc(max(1rem, min(1.8vw, 10rem)));
-  
-      @supports (font-size: clamp(1rem, 1.8vw, 10rem)) {
-        font-size: clamp(1rem, 1.8vw, 10rem);
-      }
-    }
-  
-    .intro__main--name {
-      font-size: calc(max(3.3rem, min(5vw, 12rem)));
-  
-      @supports (font-size: clamp(3.3rem, 15vw, 12rem)) {
-        font-size: clamp(3.3rem, 5vw, 12rem);
-      }
+  // padding: 0 4rem;
+  min-height: 100vh;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .intro__main--header {
+    font-size: calc(max(1rem, min(1.5rem, 10rem)));
+
+    @supports (font-size: clamp(2rem, 4rem, 12rem)) {
+      font-size: clamp(1rem, 1.5rem, 10rem);
     }
   }
-  
+  .intro__desc {
+    font-size: calc(max(1rem, min(0.5rem + 0.8vw, 5rem)));
+
+    @supports (font-size: clamp(1rem, 0.5rem + 0.8vw, 5rem)) {
+      font-size: clamp(1rem, 0.5rem + 0.8vw, 5rem);
+    }
+  }
+
+  .intro__main--name {
+    font-size: calc(max(3.3rem, min(5vw, 12rem)));
+
+    @supports (font-size: clamp(3.3rem, 15vw, 12rem)) {
+      font-size: clamp(3.3rem, 5vw, 12rem);
+    }
+  }
+
+  .intro__linkList {
+    display: flex;
+    list-style: none;
+    gap: 0 2rem;
+    padding: 1rem 0 0 0;
+
+    .intro__linkListItem {
+      font-weight: bold;
+      text-decoration: none;
+      color: variables.$text-color;
+
+      @supports (font-size: clamp(1rem, 0.5rem + 0.8vw, 5rem)) {
+        font-size: clamp(1rem, 0.5rem + 0.8vw, 5rem);
+      }
+
+      &:visited {
+        color: variables.$text-color;
+      }
+      
+
+
+    }
+  }
+}

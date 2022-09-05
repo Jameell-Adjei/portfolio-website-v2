@@ -31,14 +31,14 @@ const Navbar: React.FC = () => {
       </a>
       <div className="navbar__items">
         <a
-          className="navbar__items--link"
+          className="navbar__items--link underline-hover-effect"
           href="#intro"
           rel="noopener noreferrer"
         >
           <span className="">Home</span>
         </a>
         <a
-          className="navbar__items--link"
+          className="navbar__items--link underline-hover-effect"
           href="#about-section"
           rel="noopener noreferrer"
         >
@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
         </a>
 
         <a
-          className="navbar__items--link"
+          className="navbar__items--link underline-hover-effect"
           href="#projects"
           rel="noopener noreferrer"
         >
@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
         </a>
 
         <a
-          className="navbar__items--link"
+          className="navbar__items--link underline-hover-effect"
           href="#contact"
           rel="noopener noreferrer"
         >

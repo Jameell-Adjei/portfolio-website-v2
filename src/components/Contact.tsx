@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
       <p className="contact-section__desc">
         My email is open for anyone to send a message. I am also currently
         looking for job opportunities in web development. Feel free to message
-        me or ask any question you have. I will respond in a timely manner.{" "}
+        me or ask any question you have. I will respond in a timely manner.
       </p>
 
       <button className="contact-section__button">See More</button>
