@@ -1,0 +1,12 @@
+// Breakpoints map for the breakpoint mixin 1em equals 16px
+
+$breakpoints: (
+  '1200':  75em
+);
+
+@mixin breakpoint ($size){
+    @media (min-width: map-get($breakpoints, $size)) {
+        @content;
+    }
+    
+}

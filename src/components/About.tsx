@@ -28,7 +28,7 @@ const About: React.FC = () => {
 
       <p className="about-desc">
         I work with React.js, HTML, JavaScript, and CSS/SCSS to create quality
-        front-end products. For the backend I work with Express and MongoDB.
+        front-end products. For the backend I typically work with Node.js, Express, and MongoDB.
       </p>
       <ul className="skill-list">
         <li className="skill-list__item">JavaScript (ES6/ES2015)</li>

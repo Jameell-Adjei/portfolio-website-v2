@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { useOnScreen } from "../helperFuncs";
+import IntroLinks from "./IntroLinks";
 
 const Intro: React.FC = () => {
   const introRef = useRef(null);
@@ -24,6 +25,7 @@ const Intro: React.FC = () => {
         as full-stack applications. Also I have developed software in various
         programming languages.
       </p>
+      <IntroLinks/>
     </div>
   );
 };
