@@ -1,7 +1,8 @@
 // Breakpoints map for the breakpoint mixin 1em equals 16px
 
 $breakpoints: (
-  '1200':  75em
+  '1200':  75em,
+  '1000' : 62.5em
 );
 
 @mixin breakpoint ($size){

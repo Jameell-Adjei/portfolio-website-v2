@@ -1,4 +1,6 @@
 @use "../abstracts/variables" as variables;
+@use "../abstracts/mixins" as mixins;
+
 .navbar {
   top: 0;
   background-color: variables.$background-color;
@@ -17,6 +19,12 @@
   }
 
   .navbar__items {
+    display: none;
+    visibility: hidden;
+    @include mixins.breakpoint("1000") {
+      display: block;
+      visibility: visible;
+    }
     .navbar__items--link {
       margin: 1.9rem;
       font-size: 1.2rem;

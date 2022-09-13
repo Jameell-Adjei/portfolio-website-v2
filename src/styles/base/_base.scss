@@ -2,6 +2,7 @@
 @use "../abstracts/mixins" as m;
 @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500&display=swap");
 
+
 :root {
   color: variables.$text-color;
   background-color: variables.$background-color;
@@ -10,6 +11,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html, body , .App, #root {
+  height: 100%;
+}
+
+    
+
+
 
 .basePadding {
   padding: 0 2rem;

@@ -1,0 +1,78 @@
+@use "../abstracts/variables" as variables;
+@use "../abstracts/mixins" as mixins;
+
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 89%;
+  top: 12px;
+  @include mixins.breakpoint("1000") {
+    display: none;
+  }
+}
+
+.bm-burger-bars {
+  background: white;
+}
+.bm-menu {
+  background-color: #3c387d;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 1);
+}
+
+.bm-menu-wrap {
+  top: 0;
+  width: 68%;
+}
+
+#outer-container {
+  height: 100%;
+}
+
+#page-wrap {
+  height: 100%;
+  overflow: auto;
+
+  @include mixins.breakpoint("1200") {
+    overflow: inherit;
+  }
+}
+
+.HMenu-icon {
+  width: 3rem;
+  height: 3rem;
+}
+.my-class {
+  // color: #b8b7ad;
+  // padding: 0.8em;
+  display: flex;
+}
+.bm-item-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem 0;
+}
+
+.bm-item {
+  display: flex !important;
+  text-decoration: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+span {
+  color: variables.$text-color;
+}
+
+.bm-cross {
+  height: 24px;
+  width: 24px;
+  background-color: variables.$text-color;
+}
