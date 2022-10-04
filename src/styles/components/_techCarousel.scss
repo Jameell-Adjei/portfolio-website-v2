@@ -1,0 +1,67 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables";
+
+.techSkillTitle {
+  color: variables.$text-color;
+  font-family: "Zilla Slab", serif;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.tech-skill {
+  display: flex;
+  flex-direction: column;
+  font-size: 3.5rem;
+  align-items: center;
+}
+
+.embla {
+  position: relative;
+  padding: 20px 0;
+  max-width: 252px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @include m.breakpoint("450") {
+    max-width: 400px;
+  }
+
+  @include m.breakpoint("1200") {
+    max-width: min-content;
+  }
+}
+.embla__container {
+  display: flex;
+  user-select: none;
+  align-items: center;
+  width: 100%;
+}
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+  direction: rtl;
+}
+.embla__slide {
+  position: relative;
+  flex: 0 0 5rem;
+}
+.prev-button,
+.next-button {
+  display: none;
+
+  @include m.breakpoint("1000") {
+    display: block;
+    position: absolute;
+  }
+}
+
+.prev-button {
+  top: 31px;
+  left: -100px;
+}
+
+.next-button {
+  top: 31px;
+  right: -100px;
+}
