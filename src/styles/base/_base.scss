@@ -10,6 +10,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html,
+body,
+.App,
+#root {
+  height: 100%;
+}
 
 .basePadding {
   padding: 0 2rem;
@@ -41,3 +47,4 @@
     }
   }
 }
+

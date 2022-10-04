@@ -31,6 +31,8 @@
   }
 
   .intro__linkList {
+    display: none;
+
     display: flex;
     list-style: none;
     gap: 0 2rem;
@@ -48,9 +50,6 @@
       &:visited {
         color: variables.$text-color;
       }
-      
-
-
     }
   }
 }

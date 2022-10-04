@@ -25,7 +25,7 @@ const Intro: React.FC = () => {
         as full-stack applications. Also I have developed software in various
         programming languages.
       </p>
-      <IntroLinks/>
+      <IntroLinks />
     </div>
   );
 };
