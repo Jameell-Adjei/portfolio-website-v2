@@ -1,5 +1,6 @@
 import React from "react";
 import { useOnViewport } from "../helperFuncs";
+import TechSkillsCarosuel from "./TechSkillsCarosuel";
 
 const About: React.FC = () => {
   useOnViewport(
@@ -8,6 +9,7 @@ const About: React.FC = () => {
     "animate"
   );
   return (
+    <>
     <section className="global about-section basePadding" id="about-section">
       <h1 className="about__title">About Me</h1>
 
@@ -30,16 +32,9 @@ const About: React.FC = () => {
         I work with React.js, HTML, JavaScript, and CSS/SCSS to create quality
         front-end products. For the backend I typically work with Node.js, Express, and MongoDB.
       </p>
-      <ul className="skill-list">
-        <li className="skill-list__item">JavaScript (ES6/ES2015)</li>
-        <li className="skill-list__item">React</li>
-        <li className="skill-list__item">CSS/SCSS</li>
-        <li className="skill-list__item">MongoDB</li>
-        <li className="skill-list__item">Mongoose</li>
-        <li className="skill-list__item">Express</li>
-        <li className="skill-list__item">Node.js</li>
-      </ul>
     </section>
+    <TechSkillsCarosuel/>
+    </>
   );
 };
 
