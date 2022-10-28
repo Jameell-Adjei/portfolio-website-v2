@@ -20,7 +20,7 @@ const HamburgerMenu: React.FC = () => {
       >
         <div className="test">
           <img
-            src="src\assests\icons\home-svgrepo-com.svg"
+            src="\icons\home-svgrepo-com.svg"
             alt=""
             className="HMenu-icon"
           />
@@ -34,7 +34,7 @@ const HamburgerMenu: React.FC = () => {
         onClick={onClickHandler}
       >
         <img
-          src="src\assests\icons\information-svgrepo-com.svg"
+          src="icons\information-svgrepo-com.svg"
           alt=""
           className="HMenu-icon"
         />
@@ -49,7 +49,7 @@ const HamburgerMenu: React.FC = () => {
         onClick={onClickHandler}
       >
         <img
-          src="src\assests\icons\computer-svgrepo-com.svg"
+          src="\icons\computer-svgrepo-com.svg"
           alt=""
           className="HMenu-icon"
         />
@@ -64,7 +64,7 @@ const HamburgerMenu: React.FC = () => {
         onClick={onClickHandler}
       >
         <img
-          src="src\assests\icons\mail-svgrepo-com.svg"
+          src="\icons\mail-svgrepo-com.svg"
           alt=""
           className="HMenu-icon"
         />
