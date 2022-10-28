@@ -1,7 +1,6 @@
 @use "../abstracts/variables" as variables;
 @use "../abstracts/mixins" as mixins;
 
-
 .bm-burger-button {
   position: fixed;
   width: 36px;
@@ -48,15 +47,11 @@
   height: 3rem;
 }
 .my-class {
-  // color: #b8b7ad;
-  // padding: 0.8em;
   display: flex;
 }
 .bm-item-list {
-  display: flex;
-  flex-direction: column;
+  @extend .centerColumn;
   justify-content: center;
-  align-items: center;
   gap: 1.5rem 0;
 }
 

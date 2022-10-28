@@ -14,6 +14,7 @@
     }
   }
   .intro__desc {
+    max-width: 63ch;
     font-size: calc(max(1rem, min(0.5rem + 0.8vw, 5rem)));
 
     @supports (font-size: clamp(1rem, 0.5rem + 0.8vw, 5rem)) {
@@ -30,8 +31,6 @@
   }
 
   .intro__linkList {
-    display: none;
-
     display: flex;
     list-style: none;
     gap: 0 2rem;
