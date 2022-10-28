@@ -8,10 +8,8 @@ interface TSProps {
 const TechSkill: React.FC<TSProps> = ({ title, className }) => {
   return (
     <div className="tech-skill embla__slide">
-
-        <i className={className + " colored"}> </i>
-        <span className="techSkillTitle">{title}</span>
-    
+      <i className={className + " colored"}> </i>
+      <span className="techSkillTitle">{title}</span>
     </div>
   );
 };
