@@ -1,10 +1,9 @@
-.about-section {
- // padding: 6rem 4rem; // consider removing this padding bc we already have the base one
-  opacity: 0;
-    .skill-list {
-        margin-bottom: 2.4rem;
-    }
+@use "../abstracts/variables";
 
+.about-section {
+  .skill-list {
+    margin-bottom: 2.4rem;
+  }
 }
 .about-desc {
   max-width: 65ch;

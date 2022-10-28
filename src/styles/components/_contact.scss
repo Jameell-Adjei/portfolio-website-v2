@@ -1,0 +1,17 @@
+@use "../abstracts/variables";
+@use "../base/animations";
+.contact-section {
+
+  padding-bottom: 4rem;
+  .contact-section__desc {
+    max-width: 65ch;
+
+    font-size: calc(max(1rem, min(1.2vw, 8rem)));
+    @supports (font-size: clamp(1rem, 1.2vw, 8rem)) {
+      font-size: clamp(1rem, 1.2vw, 8rem);
+    }
+    .contact-section__link {
+      color: variables.$secondary-color;
+    }
+  }
+}

@@ -1,8 +1,7 @@
 import { MutableRefObject, useEffect, useState } from "react";
 
 interface Options {
-  rootMargin: string;
-  threshold?: number;
+  threshold: number | number[];
 }
 
 // Hook to check if the element is within the viewport/screen
