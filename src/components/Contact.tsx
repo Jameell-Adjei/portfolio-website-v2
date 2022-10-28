@@ -1,16 +1,16 @@
 import React, { useRef } from "react";
 import { useOnScreen } from "../helperFuncs";
+
 const Contact: React.FC = () => {
   const ref: any = useRef<HTMLElement>(null);
 
   const contactOnScreen = useOnScreen(ref, {
-    rootMargin: "0px 0px  1px 0px",
-    threshold: 0,
+    threshold: 0.25,
   });
   return (
     <section
-      className={`global contact-section basePadding ${
-        contactOnScreen ? "animate" : ""
+      className={`global contact-section basePadding m-fadeOut ${
+        contactOnScreen ? "m-fadeIn" : ""
       }`}
       id="contact"
       ref={ref}
@@ -18,12 +18,14 @@ const Contact: React.FC = () => {
       <h1 className="contact-section__title">Getting in Touch with me</h1>
 
       <p className="contact-section__desc">
-        My email is open for anyone to send a message. I am also currently
-        looking for job opportunities in web development. Feel free to message
-        me or ask any question you have. I will respond in a timely manner.
+        My{" "}
+        <a href="mailto:jameelladjei@gmail.com" className="about-section__link">
+          email
+        </a>{" "}
+        is open for anyone to send a message. I am also currently looking for
+        job opportunities in web development. Feel free to message me or ask any
+        question you have. I will respond in a timely manner.
       </p>
-
-      <button className="contact-section__button">See More</button>
     </section>
   );
 };

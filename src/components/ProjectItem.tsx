@@ -16,13 +16,15 @@ const ProjectItem: React.FC<PIProps> = ({ title, desc, link, tags, src }) => {
   const ref: any = useRef<HTMLElement>(null);
 
   const itemOnScreen = useOnScreen(ref, {
-    rootMargin: "0px 0px -250px 0px",
-    threshold: 0,
+    threshold: 0.25,
   });
 
   return (
-    <div className={`project-item ${itemOnScreen ? "animate" : ""}`} ref={ref}>
-      <h1 className="project-grid__item--title">{title}</h1>
+    <div
+      className={`project-item m-fadeOut ${itemOnScreen ? "m-fadeIn" : ""}`}
+      ref={ref}
+    >
+      <h3 className="project-grid__item--title">{title}</h3>
       <div className="project-item-wrapper">
         <ProjectImage src={src} />
         <a

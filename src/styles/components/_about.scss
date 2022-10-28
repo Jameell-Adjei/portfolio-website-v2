@@ -16,40 +16,19 @@
 }
 .about__title {
   font-size: calc(max(2rem, min(2vw, 12rem)));
-
+  padding: 3rem 0;
   @supports (font-size: clamp(3rem, 3vw, 12rem)) {
     font-size: clamp(3rem, 3vw, 12rem);
   }
 }
-
-
-// animation classes
-.animate{
-  position: relative;
-  z-index: 1;
-  animation: fade-in 900ms linear;
-  opacity: 1;
-}
-
-
-@keyframes fade-in {
-  0%{
-      transform: translateY(-5rem);
-      opacity: 0;
+.about-section__link {
+  color: variables.$secondary-color;
+  transition: all 0.3s ease-in;
+  @media (hover: hover) {
+    &:hover {
+      color: variables.$text-color;
+    }
   }
 
-  25%{
-      transform: translateY(-2rem);
-      opacity: 0.1;
-  }
 
-  50%{
-      transform: translateY(-1rem);
-      opacity: 0.4;
-  }
-
-  100%{
-      transform: translateY(0);
-      opacity: 1;
-  }
 }

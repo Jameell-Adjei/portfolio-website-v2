@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { useOnScreen } from "../helperFuncs";
 import TechSkillsCarosuel from "./TechSkillsCarosuel";
 
@@ -6,24 +6,31 @@ const About: React.FC = () => {
   const ref: any = useRef<HTMLElement>(null);
 
   const about = useOnScreen(ref, {
-    rootMargin: "0px 0px -450px 0px",
-    threshold: 0,
+    threshold: 0.25,
   });
 
   return (
     <>
       <section
-        className={`global about-section basePadding ${about ? "animate" : ""}`}
+        className={`global about-section basePadding m-fadeOut ${about ? 'm-fadeIn' : ""}`}
         id="about-section"
         ref={ref}
       >
-        <h1 className="about__title">About Me</h1>
+        <h2 className="about__title">About Me</h2>
 
         <p className="about-desc">
-          I worked as a Assistant Developer/Designer at IdeasFWD for over a
-          year. There, I created hundreds of mockups and designs in Figma and
-          implemented those designs with a combination of HTML, JavaScript, and
-          CSS.
+          I worked as a Assistant Developer/Designer at{" "}
+          <a
+            href="https://ideasfwd.squarespace.com/"
+            className="about-section__link"
+            target={"_blank"}
+          >
+            {" "}
+            IdeasFWD
+          </a>{" "}
+          for over a year. There, I created hundreds of mockups and designs in
+          Figma and implemented those designs with a combination of HTML,
+          JavaScript, and CSS.
         </p>
 
         <p className="about-desc">
