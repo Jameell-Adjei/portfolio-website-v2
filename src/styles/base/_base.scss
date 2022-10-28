@@ -1,5 +1,5 @@
 @use "../abstracts/variables";
-@use "../abstracts/mixins" as m;
+@use "../abstracts/mixins";
 @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500&display=swap");
 
 :root {
@@ -19,11 +19,12 @@ body,
 
 .basePadding {
   padding: 0 2rem;
-  max-width: 100rem;
-  margin: 0 auto;
+  @include mixins.breakpoint("660") {
+    padding: 0;
+  }
 }
 
-@include m.breakpoint("1200") {
+@include mixins.breakpoint("1200") {
   @media (hover: hover) {
     .underline-hover-effect {
       padding-bottom: 0.1rem; /* defines the space between text and underline */
@@ -49,11 +50,6 @@ body,
 }
 
 section {
-  display: flex;
-  flex-direction: column;
+  @extend .centerColumn;
   justify-content: center;
-  align-items: center;
-}
-.contact-section{
-  opacity: 0;
 }
