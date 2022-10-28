@@ -1,9 +1,10 @@
 import React from "react";
-import { slide as Menu } from 'react-burger-menu'
-import HamburgerMenu from "./HamburgerMenu";
+
+
 const Navbar: React.FC = () => {
+
   return (
-    <nav className="navbar">
+    <nav className={"navbar"}  >
       <a href="" className="navbar__logo">
         <svg
           width="32px"

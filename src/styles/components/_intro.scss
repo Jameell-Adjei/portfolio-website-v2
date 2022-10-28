@@ -1,12 +1,11 @@
 @use "../abstracts/variables";
-
+@use '../abstracts/mixins';
+@use '../base/animations';
 .intro {
-  // padding: 0 4rem;
   min-height: 100vh;
-  opacity: 1;
-  display: flex;
-  flex-direction: column;
+  @extend .centerColumn;
   justify-content: center;
+
   .intro__main--header {
     font-size: calc(max(1rem, min(1.5rem, 10rem)));
 
@@ -15,6 +14,7 @@
     }
   }
   .intro__desc {
+    max-width: 63ch;
     font-size: calc(max(1rem, min(0.5rem + 0.8vw, 5rem)));
 
     @supports (font-size: clamp(1rem, 0.5rem + 0.8vw, 5rem)) {
@@ -23,16 +23,14 @@
   }
 
   .intro__main--name {
-    font-size: calc(max(3.3rem, min(5vw, 12rem)));
+    font-size: calc(max(3.3rem, min(1rem + 4vw, 12rem)));
 
-    @supports (font-size: clamp(3.3rem, 15vw, 12rem)) {
-      font-size: clamp(3.3rem, 5vw, 12rem);
+    @supports (font-size: clamp(3.3rem, 1rem + 4vw, 12rem)) {
+      font-size: clamp(3.3rem, 1rem + 4vw, 12rem);
     }
   }
 
   .intro__linkList {
-    display: none;
-
     display: flex;
     list-style: none;
     gap: 0 2rem;

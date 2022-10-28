@@ -1,18 +1,26 @@
-@use "../abstracts/variables" as variables;
-@use "../abstracts/mixins" as m;
-.project-container {
-  opacity: 1;
-  min-height: 100vh;
-}
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
 
+.project-container {
+  min-height: 100vh;
+  margin-top: 9rem;
+
+}
+.project-item {
+
+  &:last-child {
+    padding-bottom: 4rem;
+  }
+}
 .project-grid {
-  h1 {
+  h3 {
+    font-size: 2rem;
     text-align: center;
     padding-bottom: 1rem;
   }
 }
 .project-item-wrapper {
-  @include m.breakpoint("1200") {
+  @include mixins.breakpoint("1200") {
     display: grid;
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -30,7 +38,7 @@
   text-decoration: none;
   color: variables.$text-color;
 
-  @include m.breakpoint("1200") {
+  @include mixins.breakpoint("1200") {
     grid-area: 1/9/4/-1;
     padding: 1rem 0;
   }
@@ -49,7 +57,7 @@
       font-size: clamp(1.3rem, 1.2vw, 1.5rem);
     }
 
-    @include m.breakpoint("1200") {
+    @include mixins.breakpoint("1200") {
       margin-bottom: 0;
       max-width: 30rem;
       &:hover {
@@ -75,7 +83,7 @@
 }
 
 .project__main-header {
-  padding-bottom: 3rem;
+  padding: 3rem 0;
   text-align: center;
   font-size: calc(max(2rem, min(2vw, 12rem)));
 
@@ -86,7 +94,7 @@
 
 .project-img {
   display: none;
-  @include m.breakpoint("1200") {
+  @include mixins.breakpoint("1200") {
     display: block;
     grid-area: 1/1/2/13;
 
@@ -113,3 +121,5 @@
     grid-area: 1/11/4/-1;
   }
 }
+
+

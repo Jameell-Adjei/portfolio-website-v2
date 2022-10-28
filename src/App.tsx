@@ -11,15 +11,17 @@ function App() {
   return (
     <div className="App">
       <div id="outer-container">
+
         <Navbar />
         <HamburgerMenu />
 
         <div id="page-wrap">
-          <Intro />
+          <Intro/>
           <About />
           <Projects />
           <Contact />
         </div>
+
       </div>
     </div>
   );

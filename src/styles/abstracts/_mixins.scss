@@ -3,6 +3,7 @@
 $breakpoints: (
   '1200':  75em,
   '1000' : 62.5em,
+  '660' : 41.25em,
   '450' : 28.125em
 );
 
@@ -12,3 +13,11 @@ $breakpoints: (
     }
     
 }
+
+
+.centerColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+

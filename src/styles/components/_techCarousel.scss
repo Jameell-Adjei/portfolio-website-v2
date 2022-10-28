@@ -1,4 +1,4 @@
-@use "../abstracts/mixins" as m;
+@use "../abstracts/mixins";
 @use "../abstracts/variables";
 
 .techSkillTitle {
@@ -9,10 +9,8 @@
 }
 
 .tech-skill {
-  display: flex;
-  flex-direction: column;
+  @extend .centerColumn;
   font-size: 3.5rem;
-  align-items: center;
 }
 
 .embla {
@@ -23,11 +21,11 @@
   margin-left: auto;
   margin-right: auto;
 
-  @include m.breakpoint("450") {
+  @include mixins.breakpoint("450") {
     max-width: 400px;
   }
 
-  @include m.breakpoint("1200") {
+  @include mixins.breakpoint("1200") {
     max-width: min-content;
   }
 }
@@ -50,7 +48,7 @@
 .next-button {
   display: none;
 
-  @include m.breakpoint("1000") {
+  @include mixins.breakpoint("1000") {
     display: block;
     position: absolute;
   }

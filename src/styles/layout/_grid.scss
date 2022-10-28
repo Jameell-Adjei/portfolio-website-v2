@@ -1,6 +1,6 @@
+@use '../abstracts/mixins';
+
 .project-grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @extend .centerColumn;
 }
 

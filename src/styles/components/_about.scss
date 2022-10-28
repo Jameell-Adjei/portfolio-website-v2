@@ -1,10 +1,9 @@
-.about-section {
- // padding: 6rem 4rem; // consider removing this padding bc we already have the base one
-  opacity: 1;
-    .skill-list {
-        margin-bottom: 2.4rem;
-    }
+@use "../abstracts/variables";
 
+.about-section {
+  .skill-list {
+    margin-bottom: 2.4rem;
+  }
 }
 .about-desc {
   max-width: 65ch;
@@ -16,8 +15,19 @@
 }
 .about__title {
   font-size: calc(max(2rem, min(2vw, 12rem)));
-
+  padding: 3rem 0;
   @supports (font-size: clamp(3rem, 3vw, 12rem)) {
     font-size: clamp(3rem, 3vw, 12rem);
   }
+}
+.about-section__link {
+  color: variables.$secondary-color;
+  transition: all 0.3s ease-in;
+  @media (hover: hover) {
+    &:hover {
+      color: variables.$text-color;
+    }
+  }
+
+
 }
