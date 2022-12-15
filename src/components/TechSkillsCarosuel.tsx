@@ -1,4 +1,4 @@
-import React, { ReactNode, useCallback } from "react";
+import React, { useCallback, useEffect } from "react";
 import useEmblaCarousel, {
   EmblaEventType,
   EmblaOptionsType,
@@ -25,6 +25,12 @@ const TechSkillCarosuel: React.FC = () => {
 
   const scrollNext = useCallback(() => {
     if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
+
+  useEffect(() => {
+    if (emblaApi) {
+      emblaApi.reInit();
+    }
   }, [emblaApi]);
 
   return (

@@ -16,7 +16,7 @@ const Projects: React.FC = () => {
         />
         <ProjectItem
           title="Movie Tracker"
-          desc="A web application that allow users to track movies that have watched and save the titles of movies that wish to watch later."
+          desc="A web application that allow users to track movies that they have watched and save the titles of movies they wish to watch later."
           tags={movieTrackerTags}
           src={"/images/original movie tracker image v2.png"}
         />

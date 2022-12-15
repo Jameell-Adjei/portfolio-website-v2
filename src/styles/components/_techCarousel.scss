@@ -16,12 +16,20 @@
 .embla {
   position: relative;
   padding: 20px 0;
-  max-width: 310px;
-
+  overflow: hidden;
+  display: none;
+  visibility: hidden;
+  
+  width: 100%;
   @include mixins.breakpoint("450") {
     max-width: 400px;
   }
 
+  @include mixins.breakpoint("660"){
+    overflow: visible;
+    display: block;
+    visibility: visible;
+  }
   @include mixins.breakpoint("1200") {
     max-width: min-content;
   }

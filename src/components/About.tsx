@@ -19,7 +19,7 @@ const About: React.FC = () => {
         <h2 className="about__title">About Me</h2>
 
         <p className="about-desc">
-          I worked as a Assistant Developer/Designer at{" "}
+          I worked as an Assistant Developer/Designer at{" "}
           <a
             href="https://ideasfwd.squarespace.com/"
             className="about-section__link"
@@ -28,8 +28,8 @@ const About: React.FC = () => {
             {" "}
             IdeasFWD
           </a>{" "}
-          for over a year. There, I created hundreds of mockups and designs in
-          Figma and implemented those designs with a combination of HTML,
+          for over a year. There, I created hundreds of high fidelity mockups and designs in
+          Figma and implemented them with a combination of HTML,
           JavaScript, and CSS.
         </p>
 
