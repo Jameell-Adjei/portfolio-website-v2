@@ -37,8 +37,8 @@ const TechSkillCarosuel: React.FC = () => {
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {techSkillData.map((skill) => (
-            <TechSkill title={skill.name} className={skill.iconClass} />
+          {techSkillData.map((skill, index) => (
+            <TechSkill title={skill.name} className={skill.iconClass} key={index} />
           ))}
         </div>
 

@@ -3,8 +3,7 @@
 @use '../base/animations';
 .intro {
   min-height: 100vh;
-  @extend .centerColumn;
-  justify-content: center;
+
 
   .intro__main--header {
     font-size: calc(max(1rem, min(1.5rem, 10rem)));

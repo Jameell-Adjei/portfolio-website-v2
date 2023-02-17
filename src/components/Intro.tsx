@@ -9,7 +9,7 @@ const Intro: React.FC = () => {
   const introOnScreen= useOnScreen(ref, { threshold: 0.25 });
 
   return (
-    <div className={`global intro basePadding m-fadeOut ${introOnScreen? 'm-fadeIn' : ''}`} id="intro" ref={ref}>
+    <section className={`global intro basePadding m-fadeOut ${introOnScreen? 'm-fadeIn' : ''}`} id="intro" ref={ref}>
         <h2 className="intro__main--header">Hello there, I'm ...</h2>
         <h2 className="intro__main--name">Jameell</h2>
         <h2 className="intro__main--header">
@@ -21,7 +21,7 @@ const Intro: React.FC = () => {
           programming languages.
         </p>
         <IntroLinks />
-    </div>
+    </section>
   );
 };
 

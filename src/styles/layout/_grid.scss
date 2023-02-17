@@ -1,6 +1,6 @@
 @use '../abstracts/mixins';
 
 .project-grid {
-  @extend .centerColumn;
+  @extend %centerColumn;
 }
 

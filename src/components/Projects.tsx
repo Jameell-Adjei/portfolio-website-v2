@@ -1,12 +1,19 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
-import { colorVertTags, movieTrackerTags, meetTags } from "../data";
+import { colorVertTags, movieTrackerTags, meetTags, assessmentTags } from "../data";
 
 const Projects: React.FC = () => {
   return (
     <section className="global project-container basePadding" id="projects">
       <h2 className="project__main-header">Projects I’ve worked on</h2>
       <div className="project-grid">
+        <ProjectItem
+          title="CCSA Assessment"
+          desc="As assessment for a web developer position, I created this site with two pages (home and about page) based off a branding guide given to me."
+          link="https://chic-malabi-340ec1.netlify.app/"
+          tags={assessmentTags}
+          src={"/images/CCSA Logo.png"}
+        />
         <ProjectItem
           title="Meet: Landing Page"
           desc="A landing page designed for a mock product that is a group chat application."
