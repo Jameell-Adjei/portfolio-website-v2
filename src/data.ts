@@ -8,6 +8,8 @@ export const movieTrackerTags = [
 ];
 export const meetTags = ["HTML", "SCSS"]
 
+export const assessmentTags = ["HTML", "CSS", "JavaScript"];
+
 
 export const techSkillData = [
   { name: "Sass", iconClass: "devicon-sass-original" },
