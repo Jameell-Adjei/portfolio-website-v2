@@ -21,7 +21,7 @@ const About: React.FC = () => {
         <p className="about-desc">
           I worked as an Assistant Developer/Designer at{" "}
           <a
-            href="https://ideasfwd.squarespace.com/"
+            href="https://www.ideasfwd.io/"
             className="about-section__link"
             target={"_blank"}
           >
