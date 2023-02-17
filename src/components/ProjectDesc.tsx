@@ -9,8 +9,8 @@ const ProjectDesc: React.FC<PDProps> = ({ desc, tags }) => {
     <div className="project-grid-item-desc">
       <p>{desc}</p>
       <div className="project-item-tags">
-        {tags.map((tag) => (
-          <p className="project-item-tag">{tag}</p>
+        {tags.map((tag, index) => (
+          <p className="project-item-tag" key={index}>{tag}</p>
         ))}
       </div>
     </div>
