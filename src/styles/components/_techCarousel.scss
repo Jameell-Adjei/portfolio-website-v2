@@ -9,7 +9,7 @@
 }
 
 .tech-skill {
-  @extend .centerColumn;
+  @extend %centerColumn;
   font-size: 3.5rem;
 }
 

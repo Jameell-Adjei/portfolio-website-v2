@@ -50,7 +50,7 @@
   display: flex;
 }
 .bm-item-list {
-  @extend .centerColumn;
+  @extend %centerColumn;
   justify-content: center;
   gap: 1.5rem 0;
 }

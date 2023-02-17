@@ -10,6 +10,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+html{
+  scroll-behavior: smooth;
+}
 html,
 body,
 .App,
@@ -50,6 +54,6 @@ body,
 }
 
 section {
-  @extend .centerColumn;
+  @extend %centerColumn;
   justify-content: center;
 }
