@@ -6,10 +6,11 @@ export const movieTrackerTags = [
   "SCSS",
   "MongoDB",
 ];
-export const meetTags = ["HTML", "SCSS"]
+export const meetTags = ["HTML", "SCSS"];
 
 export const assessmentTags = ["HTML", "CSS", "JavaScript"];
 
+export const galleriaTags = ["React", "TypeScript", "SCSS", "Macy.js"];
 
 export const techSkillData = [
   { name: "Sass", iconClass: "devicon-sass-original" },

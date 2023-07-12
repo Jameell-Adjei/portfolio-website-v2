@@ -1,12 +1,19 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
-import { colorVertTags, movieTrackerTags, meetTags, assessmentTags } from "../data";
+import { colorVertTags, movieTrackerTags, meetTags, assessmentTags, galleriaTags } from "../data";
 
 const Projects: React.FC = () => {
   return (
     <section className="global project-container basePadding" id="projects">
       <h2 className="project__main-header">Projects I’ve worked on</h2>
       <div className="project-grid">
+        <ProjectItem
+          title="Galleria Site"
+          desc="An online gallery featuring 15 iconic artworks with high-quality images, in-depth descriptions, and linked Wikipedia pages for more information." 
+          link="https://galleria-site-delta.vercel.app/"
+          tags={galleriaTags}
+          src={"/images/galleria site preview.png"}
+        />
         <ProjectItem
           title="CCSA Assessment"
           desc="As assessment for a web developer position, I created this site with two pages (home and about page) based off a branding guide given to me."
