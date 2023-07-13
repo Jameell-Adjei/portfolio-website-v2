@@ -26,24 +26,13 @@ const IntroLinks: React.FC = () => {
       <li>
         <a
           rel="noopener noreferrer"
-          href="https://drive.google.com/file/d/1103L-nbrfVDtOxeuEMDJD4pasL7hOWKe/view"
+          href="https://docs.google.com/document/d/1f6We-Nsb0aF1b9KS6F_0_kQrapwgyCG4fbnR4rWH4ZM/view"
           target="_blank"
           className="intro__linkListItem underline-hover-effect"
         >
           Resume
         </a>
       </li>
-
-{/* 
-      <li>
-        <a
-          rel="noopener noreferrer"
-          href="mailto:jameelladjei@gmail.com" 
-          className="intro__linkListItem underline-hover-effect"
-        >
-          Contact Me via Email
-        </a>
-      </li> */}
     </ul>
   );
 };
